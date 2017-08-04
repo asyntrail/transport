@@ -42,7 +42,7 @@
             </div>
             <!-- end header -->
             <h2 class="baner-title">Search for <br> car type name</h2>
-            <a href="#" class="header-btn start-btn">Get Started</a>
+            <a href="#" class="header-btn started-btn">Get Started</a>
         </div>
         <!-- end semiopacity -->
     </div>
@@ -52,13 +52,12 @@
     <div class="about-section">
         <h3 class="green-title">ABOUT Naql</h3>
         <p class="about-section-des">Naql is the best search engine for finding a suitable <br> transportation method</p>
-        <!--begin  content clearfix-->
-        <div class=" clearfix">
         <!-- begin container -->
         <div class="container">
             <!-- begin about -->
             <div class="about">
-
+            <!--begin  content clearfix-->
+            <div class=" clearfix">
             <!-- begin about-col -->
             <div class="about-col">
                 <div class="about-col-img" style="background-image:url(img/reg.png)"></div>
@@ -82,26 +81,27 @@
             </div>
             <!-- end about-col -->
             </div>
-            <!-- end about -->
-            </div>
-            <!-- end container -->
+            <!-- end clearfix -->
+          </div>
+          <!-- end about -->
         </div>
-        <!-- end clearfix -->
+        <!-- end container -->
     </div>
     <!-- end about-section -->
 
     <!-- begin search-section -->
     <div class="search-section" style="background-image:url(img/graphic.png)">
                 <h3 class="green-title">SEARCH</h3>
-                <!-- begin container -->
-                <div class="container">
-                <select class="list">
+            <!-- begin container -->
+            <div class="container">
+            <div class="styled-select slate">
+                <select >
                     <option class="city" value="Choose city">Choose city</option>
                     <option class="city" value="New York">New York</option>
                     <option class="city" value="Miami">Miami</option>
                     <option class="city" value="Los Angales">Los Angeles</option>
                 </select>
-
+            </div>
         </div>
         <!-- end container -->
     </div>
@@ -117,21 +117,31 @@
                   <input type="text" required class="form-control" placeholder="Password">
                     <!-- begin check-btns -->
                       <div class="check-btns clearfix">
-                        <label class=""style="color:white;"><input type="checkbox" name="personality"> Remember me ?</label>
-                        <a class="password" href="">Forgot password</a>
+ <!--                        <label class=""style="color:white;"><input type="checkbox" name="personality"> Remember me ?</label> -->
+                            <div class="squaredThree ">
+                              <input type="checkbox" value="None" id="squaredThree" name="check" checked />
+                              <label for="squaredThree">  </label>
+                              <span class="remem-padding"> Remember me ?</span>
+                            </div>
+                            <!-- end .squaredThree -->
+                            <a class="password underline " href="">Forgot password</a>
                       </div>
                     <!-- end check-btns clearfix-->
                     <div class="btn-center">
                          <button type="submit" class="login-button">Login</button>
-                         <p style ="color:white;">Dont't have an account ? &nbsp;&nbsp;&nbsp;<a href="">Sign Up</a></p>
+                         <p style ="color:white;">Dont't have an account ? &nbsp;&nbsp;&nbsp;<a class="underline" href="">Sign Up</a></p>
+
                     </div>
              </form>
             </div>
             <!-- end container -->
-
-
     </div>
     <!-- end login-section -->
+    <!-- begin footer -->
+    <div class="footer">
+
+    </div>
+    <!-- end footer -->
 
 
 

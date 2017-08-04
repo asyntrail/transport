@@ -108,18 +108,30 @@ nav li{
 
 .sign-btn{
     text-align: center;
-    border-radius: 100px;
+    border-radius: 20px;
     border: 2px solid white;
-    padding: 8px 8px 8px 8px;
+    padding: 6px 28px 6px 28px;
     margin:0px 20px 0px 20px;
 }
 
-.start-btn{
+.sign-btn:hover{
+    border: 2px solid #e9603c;
+}
+
+.started-btn{
     text-align: center;
-    border-radius: 100px;
+    color: green;
+    background: white;
+    border-radius: 30px;
     border: 2px solid white;
-    padding: 8px 8px 8px 8px;
-    margin:0px 20px 0px 60px;
+    padding: 8px 50px 8px 50px;
+    margin:0px 20px 0px 150px;
+}
+
+.started-btn:hover{
+    border: 2px solid white;
+    background: #e9603c;
+    color: white;
 }
 
 .semiopacity{
@@ -132,7 +144,7 @@ nav li{
   font-family: Intro;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 60px 0px 100px 56px;
+  margin: 60px 0px 100px 150px;
 }
 
 .about-section{
@@ -276,6 +288,7 @@ input[type="text"]:focus { outline: none; }
     padding: 10px 50px 10px 50px;
     font-weight: bold;
     font-family: Roboto-Regular;
+        margin-bottom: 20px;
 }
 
 .login-button:hover{
@@ -288,4 +301,107 @@ input[type="text"]:focus { outline: none; }
 
 .btn-center{
   text-align: center;
+}
+
+/* .squaredThree */
+.squaredThree {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+  display: inline;
+  color: white;
+}
+.squaredThree label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+.squaredThree label:after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid red;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+.squaredThree label:hover::after {
+  opacity: 0.3;
+}
+.squaredThree input[type=checkbox] {
+  visibility: hidden;
+}
+.squaredThree input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+/* end .squaredThree */
+
+.remem-padding{
+      padding-left: 10px;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.footer{
+  min-height: 33px;
+  background: #3d3d3d;
+}
+
+.styled-select {
+   background: url(../img/icon.jpg) no-repeat 96% 0;
+   height: 60px;
+   overflow: hidden;
+   width: 240px;
+   font-family: Roboto-Regular;
+    margin: 0 auto;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 240px;;
+}
+
+.styled-select.slate {
+   background: url(../img/icon.jpg) no-repeat right center;
+   height: 34px;
+   width: 320px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 20px;
+   height: 34px;
+   width: 340px;
+}
+
+
+@media (max-width:900px){
+    .header-btns-right{float: left;}
+}
+
+@media (max-width:768px){
+    .baner-title{font-size: 35px; margin-left: 50px;}
+    .started-btn{margin-left: 50px;}
+    .about-col{float: none; width: 100%}
+    .styled-select.slate {   width: 220px;}
+    .styled-select.slate select {width: 240px;}
+    .password{float:none;display: block;margin-top: 20px;}
 }
