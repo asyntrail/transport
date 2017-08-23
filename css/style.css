@@ -410,7 +410,7 @@ input[type="text"]:focus { outline: none; }
 
 .sidebar {
   height: 2223px;
-  width: 400px;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -421,7 +421,7 @@ input[type="text"]:focus { outline: none; }
 .bar {
   display: block;
   height: 5px;
-  width: 50px;
+  width: 40px;
   background-color: #EF8354;
   margin: 10px auto;
 }
