@@ -395,8 +395,6 @@ input[type="text"]:focus { outline: none; }
 
 
 
-
-
 .main{
   z-index: 2;
   position: relative;
@@ -410,7 +408,7 @@ input[type="text"]:focus { outline: none; }
 
 .sidebar {
   height: 2223px;
-  width: 100%;
+  width: 400px;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -630,18 +628,23 @@ input[type="text"]:focus { outline: none; }
     display: block;
   }
 }
+
 @media (min-width: 910px) {
-  .nav-right {
-    position: absolute;
-  }
+  .nav-right {position: absolute;}
+
 /*  .hidden-xs {
     display: block;
   }
 */
 
-  .visible-xs {
+/*  .visible-xs {
+    display: none;
+  }*/
+
+  .button{
     display: none;
   }
+
 
 }
 
@@ -651,6 +654,7 @@ input[type="text"]:focus { outline: none; }
   .header-btns-right{display: none;}
   .logo{margin:25px 0px 0px 0px;}
   .header{border: none}
+
 }
 
 
