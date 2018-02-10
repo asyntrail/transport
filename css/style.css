@@ -629,7 +629,7 @@ input[type="text"]:focus { outline: none; }
   }
 }
 
-@media (min-width: 910px) {
+@media (min-width: 911px) {
   .nav-right {position: absolute;}
 
 /*  .hidden-xs {
@@ -645,7 +645,9 @@ input[type="text"]:focus { outline: none; }
     display: none;
   }
 
-
+  .move-to-left {
+    transform: translateX(0px);
+  }
 }
 
 @media (max-width:910px){
