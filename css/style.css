@@ -263,6 +263,15 @@ input[type="text"]:focus {
     outline: none;
 }
 
+input[type="email"]:focus {
+    outline: none;
+}
+
+input[type="password"]:focus {
+    outline: none;
+}
+
+
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #ffffff;
